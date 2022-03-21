@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import GoldLink from "../components/subComponents/goldLink";
 
 const FourOhFourSection = styled.section`
   color: ${({ theme }) => theme.colors.isWhite};
