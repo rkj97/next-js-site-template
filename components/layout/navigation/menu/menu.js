@@ -2,13 +2,13 @@ import Link from 'next/link';
 import { bool, func } from 'prop-types';
 import { StyledMenu } from './menu.styled';
 
-const Menu = ({ open }) => (
+const Menu = ({ open, setOpen }) => (
         <StyledMenu open={open}>
             <Link href="/">
-                <a>HOME</a>
+                <a onClick={() => setOpen(!open)}>HOME</a>
             </Link>
             <Link href="/about">
-                <a>About Us</a>
+                <a onClick={() => setOpen(!open)}>About Us</a>
             </Link>
         </StyledMenu>
     );
