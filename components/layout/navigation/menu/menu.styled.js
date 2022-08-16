@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const StyledMenu = styled.nav`
   display: flex;
@@ -13,7 +13,7 @@ export const StyledMenu = styled.nav`
   top: 0;
   right: 0;
   transition: transform 0.3s ease-in-out;
-  transform: ${({ open }) => open ? 'translateY(0)' : 'translateY(-100%)'};
+  transform: ${({ open }) => (open ? "translateY(0)" : "translateY(-100%)")};
   
   a {
     font-size: 3rem;

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const StyledPrimaryBlueSection = styled.section`
   color: ${({ theme }) => theme.colors.isWhite};

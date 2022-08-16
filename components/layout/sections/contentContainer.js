@@ -1,14 +1,13 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const StyledContentContainer = styled.div`
   max-width: 100%;
   margin: 0 auto;
   position: relative;
-  
+
   @media (min-width: ${({ theme }) => theme.breakPoints.small}) {
-    
   }
-  
+
   @media (min-width: ${({ theme }) => theme.breakPoints.medium}) {
     max-width: ${({ theme }) => theme.widths.mediumMaxWidth};
   }
@@ -20,6 +19,4 @@ export const StyledContentContainer = styled.div`
   @media (min-width: ${({ theme }) => theme.breakPoints.xLarge}) {
     max-width: ${({ theme }) => theme.widths.xlargeMaxWidth};
   }
-  
-  
 `;

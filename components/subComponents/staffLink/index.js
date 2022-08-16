@@ -1,1 +1,1 @@
-export { default } from './staffLink';
+export { default } from "./staffLink";
