@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
+import { StyledContentContainer } from "../sections/contentContainer";
 import Burger from "../navigation/burger";
 import Menu from "../navigation/menu";
 import { useOnClickOutside } from "../../hooks/useOnClickOutside";
@@ -20,17 +21,21 @@ const Header = () => {
 
   return (
     <header ref={node} className={styles.header}>
-      <Link href={"/"}>
-        <a className={styles.logoLink}>
-          <Image
-            src="/img/generic-log.png"
-            alt="Logo"
-            width={190}
-            height={100}
-            layout="responsive"
-          />
-        </a>
-      </Link>
+      <StyledContentContainer>
+        <Link href={"/"}>
+          <a className={styles.logoLink}>
+            <Image
+              // insert logo here
+              src="/img/frc_logo.png"
+              alt="Logo"
+              width={197}
+              height={197}
+              layout="responsive"
+            />
+          </a>
+        </Link>
+      </StyledContentContainer>
+
       <Burger open={open} setOpen={setOpen} />
       <Menu open={open} setOpen={setOpen} />
     </header>

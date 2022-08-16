@@ -9,7 +9,7 @@ const AboutUs = () => (
   <>
     <HeadTag
       title="About Us"
-      description="About FRC's Association of Churches & Ministries"
+      description="About FRC's Association of Churches &amp; Ministries"
     />
 
     <StyledPrimaryBlueSection>

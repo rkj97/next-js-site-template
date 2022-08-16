@@ -1,11 +1,11 @@
 .header {
-  position: fixed;
-  padding: 6rem;
+  /* position: fixed; */
+  padding: 1rem;
   width: 100%;
   z-index: 10;
 }
 
 .logoLink {
-  max-width: 200px;
+  max-width: 150px;
   display: block;
 }

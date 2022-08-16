@@ -6,4 +6,5 @@ export const StyledReadingSection = styled.div`
   text-align: ${(props) => (props.alignment === "" ? "left" : props.alignment)};
   font-size: 1.8rem;
   line-height: 1.6;
+  padding: ${({ theme }) => theme.padding.sectionPadding};
 `;
