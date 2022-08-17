@@ -1,6 +1,7 @@
 import styles from "../styles/Main.module.css";
 import HeadTag from "../components/layout/HeadTag";
 import { StyledContentContainer } from "../components/layout/sections/contentContainer";
+import { StyledPrimaryWhiteSection } from "../components/layout/sections/primaryWhiteSection";
 import { StyledPrimaryBlueSection } from "../components/layout/sections/primaryBlueSection";
 import StaffListing from "../components/subComponents/staffList";
 import { StyledReadingSection } from "../components/subComponents/readingTextBlock";
@@ -40,7 +41,8 @@ const AboutUs = () => (
         <h2 className={` ${styles.h2} ${styles.h2NoMargin} `}>OUR STAFF</h2>
         <StaffListing />
       </StyledContentContainer>
-
+    </StyledPrimaryBlueSection>
+    <StyledPrimaryWhiteSection>
       <StyledReadingSection>
         <h2 className={` ${styles.h2} ${styles.h2NoMargin} `}>
           More about text
@@ -63,7 +65,7 @@ const AboutUs = () => (
         bresaola.
         <br />
       </StyledReadingSection>
-    </StyledPrimaryBlueSection>
+    </StyledPrimaryWhiteSection>
   </>
 );
 
