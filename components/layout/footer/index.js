@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { StyledPrimaryBlueSection } from "../sections/primaryBlueSection";
-import { StyledReadingSection } from "../../subComponents/readingTextBlock";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookF,

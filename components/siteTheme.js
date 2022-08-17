@@ -7,7 +7,7 @@ export default function siteTheme() {
       primaryGold: "#ddbb2b",
       isWhite: "#ffffff",
       transparentBlack: "rgba(0,0,0,.7)",
-      mobileTransparentblack: "rgba(0,0,0,.85)",
+      mobileTransparentBlack: "rgba(0,0,0,.85)",
     },
     widths: {
       xlargeMaxWidth: "1100px",

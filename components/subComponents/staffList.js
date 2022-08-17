@@ -21,32 +21,32 @@ const StaffListing = () => (
     <StaffGrid>
       <StaffLink
         href="https://www.frc.org/tony-perkins"
-        imgageUrl="/img/headshots/tony-perkins.jpg"
+        imageUrl="/img/headshots/tony-perkins.jpg"
         staffName="Tony Perkins"
       />
       <StaffLink
         href="https://www.frc.org/tony-perkins"
-        imgageUrl="/img/headshots/tony-perkins.jpg"
+        imageUrl="/img/headshots/tony-perkins.jpg"
         staffName="Tony Perkins"
       />
       <StaffLink
         href="https://www.frc.org/tony-perkins"
-        imgageUrl="/img/headshots/tony-perkins.jpg"
+        imageUrl="/img/headshots/tony-perkins.jpg"
         staffName="Tony Perkins"
       />
       <StaffLink
         href="https://www.frc.org/tony-perkins"
-        imgageUrl="/img/headshots/tony-perkins.jpg"
+        imageUrl="/img/headshots/tony-perkins.jpg"
         staffName="Tony Perkins"
       />
       <StaffLink
         href="https://www.frc.org/tony-perkins"
-        imgageUrl="/img/headshots/tony-perkins.jpg"
+        imageUrl="/img/headshots/tony-perkins.jpg"
         staffName="Tony Perkins"
       />
       <StaffLink
         href="https://www.frc.org/tony-perkins"
-        imgageUrl="/img/headshots/tony-perkins.jpg"
+        imageUrl="/img/headshots/tony-perkins.jpg"
         staffName="Tony Perkins"
       />
     </StaffGrid>

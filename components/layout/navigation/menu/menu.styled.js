@@ -5,7 +5,7 @@ export const StyledMenu = styled.nav`
   justify-content: right;
   height: 100vh;
   flex-direction: column;
-  background: ${({ theme }) => theme.colors.mobileTransparentblack};
+  background: ${({ theme }) => theme.colors.mobileTransparentBlack};
   width: 100vw;
   text-align: left;
   padding: 10rem 2rem ;
@@ -14,6 +14,7 @@ export const StyledMenu = styled.nav`
   right: 0;
   transition: transform 0.3s ease-in-out;
   transform: ${({ open }) => (open ? "translateY(0)" : "translateY(-100%)")};
+  z-index: 50;
   
   a {
     font-size: 3rem;

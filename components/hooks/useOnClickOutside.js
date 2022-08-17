@@ -11,7 +11,7 @@ export const useOnClickOutside = (ref, handler) => {
         }
       } else {
         if (!ref.current || ref.current.contains(event.target)) {
-          if (event.target.tagName != "BUTTON" && event.target.tagName != "A")
+          if (event.target.tagName !== "BUTTON" && event.target.tagName !== "A")
             return;
         }
       }

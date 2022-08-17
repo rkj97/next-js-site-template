@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { bool, func } from "prop-types";
+import { bool } from "prop-types";
 import { StyledMenu } from "./menu.styled";
 
 const Menu = ({ open, setOpen }) => (

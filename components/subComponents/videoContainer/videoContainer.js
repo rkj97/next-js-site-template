@@ -9,7 +9,7 @@ const StyledVideoContainer = styled.div`
 const VideoContainer = (props) => (
   <>
     <StyledVideoContainer>
-      <div className={styles.outterDiv}>
+      <div className={styles.outerDiv}>
         <div className={styles.innerDiv}>
           <iframe
             src={`https://players.brightcove.net/5194481742001/ErHOgbIwP_default/index.html?videoId=${props.videoId}`}
