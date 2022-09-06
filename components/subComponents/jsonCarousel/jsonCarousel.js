@@ -1,7 +1,7 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Image from "next/image";
-import styles from "./homepageCarousel.module.css";
+import styles from "./jsonCarousel.module.css";
 
 const responsive = {
   superLargeDesktop: {
@@ -27,7 +27,7 @@ const responsive = {
   },
 };
 
-const HomepageCarousel = (props) => (
+const JSONCarousel = (props) => (
   <Carousel
     className={styles.carousel}
     responsive={responsive}
@@ -50,4 +50,4 @@ const HomepageCarousel = (props) => (
   </Carousel>
 );
 
-export default HomepageCarousel;
+export default JSONCarousel;

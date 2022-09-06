@@ -6,12 +6,11 @@ import { StyledPrimaryWhiteSection } from "../components/layout/sections/primary
 import { StyledContentContainer } from "../components/layout/sections/contentContainer";
 import VideoContainer from "../components/subComponents/videoContainer";
 import { StyledReadingSection } from "../components/subComponents/readingTextBlock";
-import HomepageCarousel from "../components/subComponents/homepageCarousel/homepageCarousel";
+import JSONCarousel from "../components/subComponents/jsonCarousel/jsonCarousel";
 
 const StyledGrid = styled.div`
   display: grid;
   grid-gap: 6rem;
-  // text-align: justify;
   a:hover {
     color: ${({ theme }) => theme.colors.altLightBlue};
     transition: all 0.1s linear;
@@ -66,10 +65,37 @@ const Home = (props) => (
     </StyledPrimaryBlueSection>
     <StyledPrimaryWhiteSection>
       <StyledContentContainer>
-        <div>
-          <h2 className={styles.h2}>HOME PAGE VIDEO</h2>
-          <VideoContainer videoId="6168869462001" />
-        </div>
+        <StyledGrid>
+          {/* Start left content here */}
+          <div>
+            <h2 className={styles.h2}>Some Homepage content</h2>
+            <p>
+              Spicy jalapeno bacon ipsum dolor amet short ribs pork loin pork
+              chicken pork chop pastrami chislic frankfurter, picanha pig. Ham
+              pork loin cupim short ribs. Pork loin fatback alcatra, pork belly
+              pastrami brisket shank meatloaf flank. Chislic pig shank corned
+              beef spare ribs. Kielbasa andouille spare ribs, porchetta sirloin
+              pork pancetta ribeye shoulder. Pastrami landjaeger meatball,
+              pancetta boudin jerky chislic shoulder sausage drumstick.
+            </p>
+            <p>
+              Spicy jalapeno bacon ipsum dolor amet short ribs pork loin pork
+              chicken pork chop pastrami chislic frankfurter, picanha pig. Ham
+              pork loin cupim short ribs. Pork loin fatback alcatra, pork belly
+              pastrami brisket shank meatloaf flank. Chislic pig shank corned
+              beef spare ribs. Kielbasa andouille spare ribs, porchetta sirloin
+              pork pancetta ribeye shoulder. Pastrami landjaeger meatball,
+              pancetta boudin jerky chislic shoulder sausage drumstick.
+            </p>
+          </div>
+          {/* End left content here */}
+          {/* Start right content here */}
+          <div>
+            <h2 className={styles.h2}>HOME PAGE VIDEO</h2>
+            <VideoContainer videoId="6168869462001" />
+          </div>
+          {/* End right content here */}
+        </StyledGrid>
       </StyledContentContainer>
     </StyledPrimaryWhiteSection>
     <StyledPrimaryBlueSection>
@@ -109,7 +135,7 @@ const Home = (props) => (
     </StyledPrimaryBlueSection>
     <StyledPrimaryWhiteSection>
       <StyledContentContainer>
-        <HomepageCarousel linkArray={props.homepageCarousel} />
+        <JSONCarousel linkArray={props.jsonCarousel} />
       </StyledContentContainer>
     </StyledPrimaryWhiteSection>
   </>
@@ -124,7 +150,7 @@ export async function getStaticProps() {
     .then((res) => res.json())
     .then(
       (result) => {
-        pageProps.homepageCarousel = result;
+        pageProps.jsonCarousel = result;
       },
       (error) => {
         // console.log(error);

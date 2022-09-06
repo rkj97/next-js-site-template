@@ -8,14 +8,14 @@ export const StyledMenu = styled.nav`
   background: ${({ theme }) => theme.colors.mobileTransparentBlack};
   width: 100vw;
   text-align: left;
-  padding: 10rem 2rem ;
+  padding: 10rem 2rem;
   position: absolute;
   top: 0;
   right: 0;
   transition: transform 0.3s ease-in-out;
   transform: ${({ open }) => (open ? "translateY(0)" : "translateY(-100%)")};
   z-index: 50;
-  
+
   a {
     font-size: 3rem;
     text-transform: uppercase;
@@ -27,7 +27,7 @@ export const StyledMenu = styled.nav`
     transition: color 0.3s linear;
     margin-left: 4rem;
     text-align: center;
-    
+
     &:hover {
       color: ${({ theme }) => theme.colors.altLightBlue};
     }
@@ -36,16 +36,15 @@ export const StyledMenu = styled.nav`
   @media (min-width: ${({ theme }) => theme.breakPoints.medium}) {
     padding: 2rem 10rem 2rem 2rem;
     flex-direction: row;
-    height: auto;a {
-    font-size: 2rem;
+    height: auto;
+    a {
+      font-size: 2rem;
+    }
   }
 
   @media (min-width: ${({ theme }) => theme.breakPoints.large}) {
-    
   }
 
   @media (min-width: ${({ theme }) => theme.breakPoints.xLarge}) {
-
   }
-  
 `;
